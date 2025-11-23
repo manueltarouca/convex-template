@@ -26,6 +26,7 @@ npm run lint
 This is a Convex + React template with authentication pre-configured.
 
 ### Tech Stack
+
 - **Frontend**: React 19, Vite, Tailwind CSS
 - **Backend**: Convex (serverless database and functions)
 - **Auth**: @convex-dev/auth with Password and Anonymous providers
@@ -33,6 +34,7 @@ This is a Convex + React template with authentication pre-configured.
 ### Project Structure
 
 **`convex/`** - Backend code (runs on Convex servers)
+
 - `schema.ts` - Database schema definition (extends authTables)
 - `auth.ts` - Authentication configuration and `loggedInUser` query
 - `router.ts` - HTTP router for custom endpoints
@@ -40,6 +42,7 @@ This is a Convex + React template with authentication pre-configured.
 - `_generated/` - Auto-generated Convex types and API (do not edit)
 
 **`src/`** - Frontend React application
+
 - `main.tsx` - App entry point with ConvexAuthProvider
 - `App.tsx` - Main component with auth-aware UI
 
@@ -52,4 +55,5 @@ This is a Convex + React template with authentication pre-configured.
 - Add custom HTTP routes in `router.ts`
 
 ### Environment Variables
+
 - `VITE_CONVEX_URL` - Convex deployment URL (set automatically by `convex dev`)

@@ -1,8 +1,8 @@
-import { Authenticated, Unauthenticated, useQuery } from "convex/react";
-import { api } from "../convex/_generated/api";
-import { SignInForm } from "./SignInForm";
-import { SignOutButton } from "./SignOutButton";
-import { Toaster } from "sonner";
+import { Authenticated, Unauthenticated, useQuery } from 'convex/react';
+import { api } from '../convex/_generated/api';
+import { SignInForm } from './SignInForm';
+import { SignOutButton } from './SignOutButton';
+import { Toaster } from 'sonner';
 
 export default function App() {
   return (
@@ -37,9 +37,7 @@ function Content() {
       <div className="text-center">
         <h1 className="text-5xl font-bold text-primary mb-4">Cook with Chef</h1>
         <Authenticated>
-          <p className="text-xl text-secondary">
-            Welcome back, {loggedInUser?.email ?? "friend"}!
-          </p>
+          <p className="text-xl text-secondary">Welcome back, {loggedInUser?.email ?? 'friend'}!</p>
         </Authenticated>
         <Unauthenticated>
           <p className="text-xl text-secondary">Sign in to get started</p>
